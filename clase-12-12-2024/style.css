@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+    line-height: 1.5;
+}
+
+header{
+    background-color: #e482be;
+    padding: 10px 20px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-size: 55px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    /* transition: text-decoration 0.5s ease; */
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+    color: #f30000;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero-contenido{
+    margin-top: 10px;
+}
+
+.hero-imagen{
+    width: 1500px;
+    height: 550px;
+    border-radius: 10px;
+}
+
+h2{
+    text-align:left;
+    text-decoration: none;
+    color: #333;
+}
+
+h3{
+    text-align:center;
+    text-decoration: none;
+    color: #f30071;
+}
+
+.categorias{
+    padding: 20px;
+    background-color: rgb(250, 169, 226);
+    margin: 20px;
+}
+   
+.lista-categorias{
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+/* Estilo general del enlace */
+.categoria-item {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Mantiene el color del texto */
+    display: inline-block; /* Permite controlar el tamaño del elemento */
+    text-align: center; /* Centra el contenido */
+    width: 200px; /* Ancho fijo para el contenedor */
+    margin: 10px;
+    transition: transform 0.3s ease; /* Animación de zoom al pasar el ratón */
+}
+
+.categoria-item:hover {
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+/* Estilo para la figura */
+.categoria-item figure {
+    margin: 0; /* Quita márgenes */
+    padding: 0;
+}
+
+/* Estilo para la imagen */
+.categoria-item img {
+    justify-content: center;
+    width: 150px; /* Imagen se adapta al contenedor */
+    height:150px;
+    border-radius: 50%; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación en hover */
+}
+
+.categoria-item img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente la imagen */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más grande */
+}
+
+/* Estilo para el texto debajo de la imagen */
+.categoria-item figcaption {
+    margin-top: 8px; /* Espaciado superior */
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold;
+    color: #333; /* Color del texto */
+    text-transform: none; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.Nosotros{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(218, 32, 32);
+    margin: 20px;
+}
+.cuadro{
+    border: 2px solid #ffffff; /* Borde del cuadro */
+    padding: 70px;         /* Espaciado interno */
+    margin: 10px 0;        /* Espaciado externo */
+    border-radius: 0px;    /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo del cuadro */
+}
+.Nosotros-item{
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+ }
+
+.productos{
+    padding: 20px;
+    background-color: rgb(250, 169, 226);
+    margin: 20px;
+}
+.lista-carrusel{
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+    overflow-x: auto; /*El contenedor permita un dexplazamiento orizontal*/
+    scroll-snap-type: x mandatory; /*Me ayuda a definir cómo se comportan los puntos de desplazamiento
+    de mi contenedor
+    x: me incida que el desplazamiento se está haciendo en el eje x
+    mandatory: El scroll se ajustará al siguiente punto de ajuste definido*/
+}
+
+.producto-item{
+    scroll-snap-align: start;
+    /* Definir cómo los elementos individuales dentro de un contenedor de scroll se alínean cuando se ajustan */
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.producto-item img{
+    border-radius: 10px;
+    justify-content: center;
+    width: 150px; /* Imagen se adapta al contenedor */
+    height:150px;
+    border-radius: 10%; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+
+}
+
+.producto-titulo{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.producto-precio{
+    font-size: 14px;
+    color:#f30071;
+    font-weight: bold;
+}
+
+.contacto {
+    background-color: #fd4fbb;
+    padding: 10px 20px;
+    background-color: #fd4fbb;
+    border: 2px solid #fd4fbb ;
+    border-radius: 0px;
+    box-shadow: 0 4px 6px  #fd4fbb(0, 0,0, 0.1);
+}
+
+.contacto h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contacto p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Estilo de los enlaces y logos */
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociales img:hover {
+    transform: scale(1.2);
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
